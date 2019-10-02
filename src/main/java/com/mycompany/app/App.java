@@ -28,13 +28,13 @@ import org.hyperledger.fabric.gateway.Wallet;
 // That line in the POM is referencing version 1.4.5 of the Fabric JAVA SDK... however, the latest version of the JAva SDK is 1.4.4.
 // As reference, see https://mvnrepository.com/artifact/org.hyperledger.fabric-sdk-java/fabric-sdk-java
 
-// Because pf the above issue, had to switch to maven (instead of gradle)
-// For some reason, maven is not thrown off by the Fabric Java SDK 1.4.5 dependency
+// Because of the above issue, I had to switch to maven (instead of gradle).
+// For some reason, maven is not thrown off by the Fabric Java SDK 1.4.5 dependency.
 
-// Running this code, you can successfully query and update the ledger (marbles chaincode)
+// Running this code you can successfully query and update the ledger (marbles chaincode).
 // However, before the process finishes, an IllegalThreadStateException is thrown...
 // It looks like the SDK has 10 lingering threads that for some reason it is not closing.
-// Please note that the Gateway object implements the AutoClose interface
+// Please note that the Gateway object implements the AutoClose interface.
 // Therefore, the close method is called by the try-catch block at the end of that block's execution... 
 // Not sure yet why these 10 threads are still running...
 
