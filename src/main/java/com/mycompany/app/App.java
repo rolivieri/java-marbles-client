@@ -29,7 +29,7 @@ import org.hyperledger.fabric.gateway.Wallet;
 // As reference, see https://mvnrepository.com/artifact/org.hyperledger.fabric-sdk-java/fabric-sdk-java
 
 // Because of the above issue, I had to switch to maven (instead of gradle).
-// For some reason, maven is not thrown off by the Fabric Java SDK 1.4.5 dependency.
+// For some reason, maven is not thrown off by the dependency on Fabric Java SDK 1.4.5.
 
 // Running this code you can successfully query and update the ledger (marbles chaincode).
 // However, before the process finishes, an IllegalThreadStateException is thrown...
