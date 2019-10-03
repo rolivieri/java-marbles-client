@@ -63,8 +63,8 @@ public class App {
         Path networkConfigFile = Paths.get("/Users/olivieri/git/fabric-samples/first-network/connection-org1.json");
 
         // Configure the gateway connection used to access the network.
-        Gateway.Builder builder = Gateway.createBuilder().identity(wallet, "user1").networkConfig(networkConfigFile)
-                .discovery(true);
+        Gateway.Builder builder = Gateway.createBuilder().identity(wallet, "user1").networkConfig(networkConfigFile);
+        // .discovery(true);
 
         // Create a gateway connection
         try (Gateway gateway = builder.connect()) {
@@ -80,7 +80,7 @@ public class App {
 
             // Insert new marble first
             logger.info("About to create a new marble... invoking initMarble() method in chaincode...");
-            result = contract.submitTransaction("initMarble", marbleName, "blue", "35", "tom");
+            result = contract.submitTransaction("initMarble", marbleName, "blue", "35", "phil collins");
             // logger.info(new String(result, StandardCharsets.UTF_8));
 
             // result = contract.evaluateTransaction("queryAllCars");
