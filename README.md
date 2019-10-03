@@ -1,3 +1,5 @@
+Execution:
+
 ```
 Ricardos-MacBook-Pro-9:java-marbles-client olivieri$ mvn exec:java -Dexec.mainClass="com.mycompany.app.App"
 [INFO] Scanning for projects...
@@ -76,3 +78,8 @@ java.lang.IllegalThreadStateException
 [INFO] ------------------------------------------------------------------------
 Ricardos-MacBook-Pro-9:java-marbles-client olivieri$
 ```
+
+References:
+* [Building Java Applications](https://guides.gradle.org/building-java-applications/)
+* [Maven in 5 Minutes](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html)
+* [3 ways to run Java main from Maven](http://www.vineetmanohar.com/2009/11/3-ways-to-run-java-main-from-maven/)
